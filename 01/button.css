@@ -16,13 +16,40 @@ body button {
     border-radius: 5px;
     border: none;
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
+    box-shadow: 0px 4px 4px; 
     align-items: center;
     box-sizing: border-box;
 
-
     margin: 0 20px;
+    
+    cursor: pointer;
+}
+
+button#button1:hover{   
+    background-color: #7b75a54d;
+    transition: 400ms;
+    
+}
+
+button#button2:hover{
+    background-color: #6d89a342;
+    transition: 400ms;
+}
+
+button#button3:hover{
+    background-color: #612c4278;
+    transition: 400ms;
+}
+
+button#button4:hover{
+    background-color: #29244873;
+    transition: 400ms;
+}
+
+button:active {
+    position: relative;
+    top: 3px;
+    box-shadow: none;
 }
 
 div.btn{
@@ -42,6 +69,8 @@ button#button1 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
+
+    transition: 400ms ;
 }
 
 button#button2 {
@@ -50,6 +79,8 @@ button#button2 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
+
+    transition: 400ms;
 }
 
 button#button3 {
@@ -58,6 +89,8 @@ button#button3 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
+
+    transition: 400ms;
     
 }
 
@@ -67,14 +100,10 @@ button#button4 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 70px;
-
+    
+    transition: 400ms;
 }
 
-button:hover {
-    background-color: #2d2a40;
-    transition: 100ms;
-
-}
 
 
 p {
@@ -96,7 +125,7 @@ img {
     width: 15px;
 }
 
-
+    /* A seguir : Barra piscando */
     @keyframes blinkcursor { /* criação do cursor*/
         form {
             border-right-color: rgba(255, 255, 255, .75);
@@ -108,7 +137,7 @@ img {
 
     .typing-animation{ /* animação do cursor */
         animation: blinkcursor 500ms steps(30) infinite normal, typing 3s steps(30) 0s normal;
-    }
+    }   /* STEPS: quadros (efeito de digitação) */
 
         @keyframes typing { /* ocultamento e aparecimento da frase(timing) */
             from {
