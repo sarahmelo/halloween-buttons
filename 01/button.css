@@ -125,9 +125,9 @@ img {
     width: 15px;
 }
 
-    /* A seguir : Barra piscando */
+    /* Abaixo : Criando o ponteiro */
     @keyframes blinkcursor { /* criação do cursor*/
-        form {
+        form { 
             border-right-color: rgba(255, 255, 255, .75);
         }
         to{
@@ -137,7 +137,7 @@ img {
 
     .typing-animation{ /* animação do cursor */
         animation: blinkcursor 500ms steps(30) infinite normal, typing 3s steps(30) 0s normal;
-    }   /* STEPS: quadros (efeito de digitação) */
+    }   /*  STEPS: quadros (efeito de digitação) */
 
         @keyframes typing { /* ocultamento e aparecimento da frase(timing) */
             from {
